@@ -44,6 +44,9 @@ var PromptContainer = React.createClass({
         }
     },
     render: function() {
+        // Before this function returned the whole UI. But we refactored it into
+        // its own component called Prompt. We changed the function calls to prefix/
+        // with handle and passed the functions as props i.e., onSubmitUser --> handleUser.
         return (
             <Prompt
                 onSubmitUser={this.handleSubmitUser}
